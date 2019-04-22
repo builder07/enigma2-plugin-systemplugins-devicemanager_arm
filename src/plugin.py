@@ -9,9 +9,9 @@ import os
 def supportExtFat():
 	if not os.path.isfile("/sbin/mkexfatfs"):
 		arch = os.popen("uname -m").read()
-		if 'mips' in arch and os.path.isfile("/usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mips/mkexfatfs"):
-			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mips/mkexfatfs /sbin/mkexfatfs && chmod 755 /sbin/mkexfatfs && ln /sbin/mkexfatfs /sbin/mkfs.exfat")
-			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mips/exfatfsck /sbin/exfatfsck && chmod 755 /sbin/exfatfsck")
+		if 'mipsel' in arch and os.path.isfile("/usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mipsel/mkexfatfs"):
+			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mipsel/mkexfatfs /sbin/mkexfatfs && chmod 755 /sbin/mkexfatfs && ln /sbin/mkexfatfs /sbin/mkfs.exfat")
+			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/mipsel/exfatfsck /sbin/exfatfsck && chmod 755 /sbin/exfatfsck")
 		elif 'armv7l' in arch and os.path.isfile("/usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/armv7l/mkexfatfs"):
 			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/armv7l/mkexfatfs /sbin/mkexfatfs && chmod 755 /sbin/mkexfatfs && ln /sbin/mkexfatfs /sbin/mkfs.exfat")
 			os.system("cp /usr/lib/enigma2/python/Plugins/SystemPlugins/DeviceManager/bin/armv7l/exfatfsck /sbin/exfatfsck && chmod 755 /sbin/exfatfsck")
