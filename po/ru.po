@@ -102,7 +102,7 @@ msgstr ""
 "Выполнить перезагрузку ресивера сейчас?"
 
 msgid "Device Manager"
-msgstr "Менеджер устройств хранения"
+msgstr "Device Manager"
 
 msgid "Device Manager - Fast Mounted Remove"
 msgstr "Менеджер устройств хранения - отмонтирование"
