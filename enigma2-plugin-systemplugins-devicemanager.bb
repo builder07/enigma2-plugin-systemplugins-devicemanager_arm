@@ -9,6 +9,7 @@ RRECOMMENDS_${PN} = "e2fsprogs-e2fsck e2fsprogs-mke2fs ntfsprogs hddtemp dosfsto
 
 inherit gitpkgv
 
+SRCREV = "${AUTOREV}"
 PV = "1+git${SRCPV}"
 PKGV = "1+git${GITPKGV}"
 
